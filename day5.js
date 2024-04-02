@@ -5,4 +5,3 @@ return arr.sort((a,b)=>a-b)
 }
 
 console.log(sortArray(arr))
-console.log(arr)
