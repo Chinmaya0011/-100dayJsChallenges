@@ -1,4 +1,4 @@
-let arr=[1,2,3];
+let arr=[1,2,3,4,5,6,7];
 
 function sumOfSquare(arr){
     
@@ -9,7 +9,7 @@ function sumOfSquare(arr){
 
 // }
 // console.log(sum);  
-return arr.reduce((sum,currElm)=>sum+=(currElm*currElm))
+return arr.reduce((sum,currElm)=>sum+=(currElm*currElm)) 
 
 }
 console.log(sumOfSquare(arr))
