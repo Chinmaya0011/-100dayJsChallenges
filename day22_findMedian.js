@@ -1,5 +1,7 @@
-let arr=[1,2,3,4];
-console.log(arr.length)
+
+let arr1=[12,23,1,3,1355,4];
+let arr=arr1.sort((a,b)=>a-b)
+console.log(arr)
 function findMedian(arr){
   
     let firstMedian=arr[0];
