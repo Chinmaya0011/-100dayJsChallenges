@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display JavaScript Files</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">100 day Javascript Challenge</h1>
+<div class="javascript">
+
+
+    <div class="jsFiles">
+        <label for="jsFiles" class="question">Choose a Question:</label>
+        <select id="jsFiles" onchange="loadSelectedFile()">
+            <option value="">Select a file...</option>
+            <option value="day1_checkTriangle.js">Day 1 - Check Triangle <span class="difficulty">Easy</span></option>
+            <option value="day2_findLongChar.js">Day 2 - Find Long Character <span class="difficulty">Intermediate</span></option>
+            <option value="day3_hashTag.js">Day 3 - Convert to Hashtag <span class="difficulty">Intermediate</span></option>
+            <option value="day4_repeat.js">Day 4 - Repeat Number in JavaScript <span class="difficulty">Easy</span></option>
+            <option value="day5_sort.js">Day 5 - Sort the Array <span class="difficulty">Easy</span></option>
+            <option value="day6_palindrome.js">Day 6 - Check the string palindrome <span class="difficulty">Easy</span></option>
+            <option value="day7_maxNum.js">Day 7 - Find the highest Number <span class="difficulty">Easy</span></option>
+            <option value="day8_factorial.js">Day 8 - Find factorial <span class="difficulty">Intermediate</span></option>
+            <option value="day9_average.js">Day 9 - Find the average <span class="difficulty">Intermediate</span></option>
+            <option value="day10_arrayEqual.js">Day 10 - Check if arrays are equal <span class="difficulty">Easy</span></option>
+            <!-- Add options for other JavaScript files -->
+            <option value="day11_sumOfDigit.js">Day 11 - Sum of digits <span class="difficulty">Intermediate</span></option>
+            <option value="day12_removeDuplicate.js">Day 12 - Remove duplicates <span class="difficulty">Intermediate</span></option>
+            <option value="day13_countVowel.js">Day 13 - Count vowels <span class="difficulty">Intermediate</span></option>
+            <option value="day14_isPowerOfTwo.js">Day 14 - Check if a number is power of two <span class="difficulty">Intermediate</span></option>
+            <option value="day15_sumOfArraySquare.js">Day 15 - Sum of squares of array elements <span class="difficulty">Intermediate</span></option>
+            <option value="day16_findMin.js">Day 16 - Find the minimum number <span class="difficulty">Intermediate</span></option>
+            <option value="day17_camelCase.js">Day 17 - Convert to camel case <span class="difficulty">Intermediate</span></option>
+            <option value="day18_isUpperOrLowerCase.js">Day 18 - Check if character is upper or lower case <span class="difficulty">Intermediate</span></option>
+            <option value="day19_checkStart.js">Day 19 - Check if string starts with a given substring <span class="difficulty">Intermediate</span></option>
+            <option value="day20_reverseString.js">Day 20 - Reverse a string <span class="difficulty">Intermediate</span></option>
+            <option value="day21_findMedium.js">Day 21 - Find the medium number in an array <span class="difficulty">Intermediate</span></option>
+            <option value="day22_findMedian.js">Day 22 - Find the median of an array <span class="difficulty">Intermediate</span></option>
+            <option value="day23_repeatedValueInarray.js">Day 23 - Find repeated values in an array <span class="difficulty">Intermediate</span></option>
+            <option value="day24_findMode.js">Day 24 - Find the mode of an array <span class="difficulty">Intermediate</span></option>
+            <option value="day25_findFact.js">Day 25 - Find factorial <span class="difficulty">Intermediate</span></option>
+        </select>
+        
+    </div>
+    
+    
+
+    <div class="answer">
+        <h3 >Question:- <p id="question"></p></h3>
+        <h3>Sample:- <p id="output"></p></h3>
+        <button onclick="showAnswer()" class="answercode">Show Answer Code</button>
+    
+        <div class="code">
+            <pre id="code" style="display: none;"></pre>
+            <!-- Button for copying the code -->
+            <button onclick="copyCode()" class="copyButton">Copy Code</button>
+        </div>
+    </div>
+   
+
+    </div>
+    <script>
+        var selectedFileCode; // Variable to store selected file code
+
+ // Function to load and execute selected JavaScript file
+function loadSelectedFile(event) {
+    event.preventDefault(); // Prevent page refresh
+
+    var selectElement = document.getElementById("jsFiles");
+    var selectedValue = selectElement.value;
+    var answerDiv = document.querySelector(".answer");
+
+    if (selectedValue) {
+        answerDiv.style.display = "block"; // Show the answer section
+        var scriptElement = document.createElement("script");
+        scriptElement.src = selectedValue;
+
+        // Clear previous output and code
+        var outputElement = document.getElementById("output");
+        outputElement.innerHTML = "";
+        document.getElementById("code").innerText = "";
+
+        // Append script to the body to execute it
+        document.body.appendChild(scriptElement);
+    } else {
+        // Hide the answer section if no file selected
+        answerDiv.style.display = "none";
+        // Clear output if no file selected
+        var outputElement = document.getElementById("output");
+        outputElement.innerHTML = "";
+    }
+}
+
+
+        // Function to display the code of the selected file
+        function showAnswer() {
+            var codeElement = document.getElementById("code");
+            codeElement.innerText = selectedFileCode;
+            codeElement.style.display = "block";
+        }
+
+      // Function to copy the code displayed in the pre element
+// Function to copy the code displayed in the pre element
+function copyCode() {
+    var codeElement = document.getElementById("code");
+    var codeText = codeElement.innerText;
+    
+    // Create a textarea element to hold the code text
+    var textarea = document.createElement("textarea");
+    textarea.value = codeText;
+    document.body.appendChild(textarea);
+
+    // Select and copy the code text from the textarea
+    textarea.select();
+    document.execCommand("copy");
+
+    // Remove the textarea from the DOM
+    document.body.removeChild(textarea);
+
+    // Update button text to "Copied" temporarily
+    var copyButton = document.querySelector(".copyButton");
+    copyButton.innerText = "Copied";
+
+    // Restore button text after 2.5 seconds
+    setTimeout(function() {
+        copyButton.innerText = "Copy Code";
+    }, 2500);
+}
+
+// Function to load and execute selected JavaScript file
+function loadSelectedFile() {
+    var selectElement = document.getElementById("jsFiles");
+    var selectedValue = selectElement.value;
+    var answerDiv = document.querySelector(".answer");
+
+    if (selectedValue) {
+        answerDiv.style.display = "block"; // Show the answer section
+        var scriptElement = document.createElement("script");
+        scriptElement.src = selectedValue;
+
+        // Clear previous output and code
+        var outputElement = document.getElementById("output");
+        outputElement.innerHTML = "";
+        document.getElementById("code").innerText = "";
+
+        // Append script to the body to execute it
+        document.body.appendChild(scriptElement);
+    } else {
+        // Hide the answer section if no file selected
+        answerDiv.style.display = "none";
+        // Clear output if no file selected
+        var outputElement = document.getElementById("output");
+        outputElement.innerHTML = "";
+    }
+}
+// Function to display the code of the selected file
+function showAnswer() {
+    var codeElement = document.getElementById("code");
+    var copyButton = document.querySelector(".copyButton"); // Select the Copy Code button
+    codeElement.innerText = selectedFileCode;
+    codeElement.style.display = "block";
+    copyButton.style.display = "block"; // Show the Copy Code button
+}
+
+    </script>
+
+</body>
+</html>
+
+

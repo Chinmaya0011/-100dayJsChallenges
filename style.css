@@ -1,0 +1,142 @@
+/* Styling for the heading */
+.heading {
+    text-align: center;
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.javascript {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* Styling for the question label */
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.jsFiles {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#jsFiles {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+#jsFiles option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#jsFiles option span.difficulty.easy {
+    color: green !important; /* Add !important to override any conflicting styles */
+}
+
+#jsFiles option span.difficulty.intermediate {
+    color: orange !important;
+}
+
+#jsFiles option span.difficulty.hard {
+    color: red !important;
+}
+
+.answer {
+    display: none;
+    position: relative;
+}
+
+.code {
+    position: relative;
+}
+
+.copyButton {
+    display: none;
+    position: absolute;
+    top:  10px;
+    right: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: #bcd2bc; /* Green background color */
+    color: rgb(0, 0, 0); /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor style */
+}
+
+.copyButton:hover {
+    background-color: #45a049; /* Darker green background color on hover */
+}
+
+/* Styling for the question title */
+#question {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the output */
+#output {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the answer code button */
+.answercode {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for the code block */
+#code {
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+/* Styling for hover effect */
+.answercode:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Styling for 3D look animation */
+.answercode {
+    transition: transform 0.3s ease-in-out;
+}
+
+.answercode:hover {
+    transform: translateY(-3px);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .heading {
+        font-size: 20px;
+    }
+    #jsFiles {
+        font-size: 14px;
+    }
+    .answercode {
+        font-size: 14px;
+    }
+    #code {
+        font-size: 14px;
+    }
+}
