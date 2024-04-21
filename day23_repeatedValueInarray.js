@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the repeated elements in an array.";
+ question = "Find the repeated elements in an array.";
 
 // Define the array
 let arr = [1, 1, 2, 3, 4, 2, 4, 3];

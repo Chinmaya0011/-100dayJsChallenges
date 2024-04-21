@@ -1,5 +1,5 @@
 // Define the question
-let question = "Calculate the sum of squares of elements in an array.";
+ question = "Calculate the sum of squares of elements in an array.";
 
 // Define the array
 let arr = [1, 2, 3, 4, 5, 6, 7];

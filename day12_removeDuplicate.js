@@ -1,5 +1,5 @@
 // Define the question
-let question = "Remove duplicates from an array.";
+ question = "Remove duplicates from an array.";
 
 // Define the array
 let arr = [1, 2, 3, 4, 5, 2, 2];

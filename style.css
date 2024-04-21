@@ -1,14 +1,20 @@
-/* Styling for the heading */
+*{
+    color: rgba(0, 179, 255, 0.815);
+    font-weight: bold;
+    background-color: #000000;
+}
 .heading {
     text-align: center;
     font-size: 24px;
-    color: #007bff;
+    color: #1c03fd;
     margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .javascript {
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
 }
 
 /* Styling for the question label */
@@ -23,7 +29,7 @@
     margin: 0 auto;
 }
 
-#jsFiles {
+.jsFiles select {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -32,21 +38,25 @@
     background-color: #f8f8f8;
 }
 
-#jsFiles option {
+.jsFiles option {
     padding: 10px;
     font-size: 16px;
 }
 
-#jsFiles option span.difficulty.easy {
-    color: green !important; /* Add !important to override any conflicting styles */
+.difficulty {
+    color: black;
 }
 
-#jsFiles option span.difficulty.intermediate {
-    color: orange !important;
+.difficulty.easy {
+    color: green;
 }
 
-#jsFiles option span.difficulty.hard {
-    color: red !important;
+.difficulty.intermediate {
+    color: orange;
+}
+
+.difficulty.hard {
+    color: red;
 }
 
 .answer {
@@ -55,26 +65,27 @@
 }
 
 .code {
+    color: red;
     position: relative;
 }
 
 .copyButton {
     display: none;
     position: absolute;
-    top:  10px;
+    top: 10px;
     right: 10px;
     width: 100px;
     margin-bottom: 10px;
-    background-color: #bcd2bc; /* Green background color */
-    color: rgb(0, 0, 0); /* White text color */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px 10px; /* Padding */
-    border: none; /* Remove border */
-    cursor: pointer; /* Cursor style */
+    background-color: #bcd2bc;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .copyButton:hover {
-    background-color: #45a049; /* Darker green background color on hover */
+    background-color: #45a049;
 }
 
 /* Styling for the question title */
@@ -97,46 +108,40 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.answercode:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
 }
 
 /* Styling for the code block */
 #code {
     font-size: 16px;
     background-color: #000;
-    color: #fff;
+    color: #ff0101;
     padding: 20px;
     border-radius: 5px;
     overflow-x: auto;
     margin-top: 20px;
 }
 
-/* Styling for hover effect */
-.answercode:hover {
-    background-color: #0056b3;
-    transition: background-color 0.3s ease-in-out;
-}
-
-/* Styling for 3D look animation */
-.answercode {
-    transition: transform 0.3s ease-in-out;
-}
-
-.answercode:hover {
-    transform: translateY(-3px);
-}
-
 /* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 468px) {
+    .javascript {
+        margin: 0 auto;
+        width: 90%;
+    }
     .heading {
         font-size: 20px;
     }
-    #jsFiles {
+    .jsFiles select {
         font-size: 14px;
     }
     .answercode {
         font-size: 14px;
     }
     #code {
-        font-size: 14px;
-    }
-}
+        font-size: 14;
+    }}

@@ -1,5 +1,5 @@
 // Define the question
-let question = "Check if a word in a string starts with a given string.";
+ question = "Check if a word in a string starts with a given string.";
 
 // Define the strings
 let str = 'chinMaya kumar mishra';

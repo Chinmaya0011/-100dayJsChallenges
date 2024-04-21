@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the average of numbers in an array.";
+ question = "Find the average of numbers in an array.";
 
 // Define the array
 let arr = [12, 32, 4, 3, 57];

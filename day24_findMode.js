@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the element with the maximum frequency in an array.";
+ question = "Find the element with the maximum frequency in an array.";
 
 // Define the array
 let arr = [1, 2, 3, 1, 7, 4, 7, 4, 4];

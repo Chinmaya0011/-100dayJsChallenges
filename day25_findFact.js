@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the factorial of a number using recursion.";
+ question = "Find the factorial of a number using recursion.";
 
 // Define the number
 let num = 10;

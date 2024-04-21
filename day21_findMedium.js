@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the median of an array.";
+ question = "Find the median of an array.";
 
 // Define the array
 let arr = [12, 24, 4, 2, 45623, 23, 456];

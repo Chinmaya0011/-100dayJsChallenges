@@ -1,5 +1,5 @@
 // Question
-let question = "Write a function to find the number of occurrences of a letter in a string.";
+ question = "Write a function to find the number of occurrences of a letter in a string.";
 
 // Define the function
 function findRepeat(str, l) {

@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the minimum number in an array.";
+ question = "Find the minimum number in an array.";
 
 // Define the array
 let arr = [12, 43, 23, 454, 23, 632, 56, 332, 42];

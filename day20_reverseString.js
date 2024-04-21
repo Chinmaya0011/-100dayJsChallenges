@@ -1,5 +1,5 @@
 // Define the question
-let question = "Reverse a string.";
+ question = "Reverse a string.";
 
 // Define the string
 let str = 'chinmayakumarmishra';

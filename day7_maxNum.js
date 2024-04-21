@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the maximum number in an array.";
+ question = "Find the maximum number in an array.";
 
 // Define the array
 let arr = [1, 23, 42, 5865, 324, 745, 123];

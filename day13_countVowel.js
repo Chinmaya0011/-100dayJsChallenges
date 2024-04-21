@@ -1,5 +1,5 @@
 // Define the question
-let question = "Count the number of vowels in a string.";
+ question = "Count the number of vowels in a string.";
 
 // Define the string
 let str = 'chinmaya kumar mishra';

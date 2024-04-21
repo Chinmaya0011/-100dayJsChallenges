@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the factorial of a given number.";
+ question = "Find the factorial of a given number.";
 
 // Define the number for which factorial needs to be found
 let num = 5;

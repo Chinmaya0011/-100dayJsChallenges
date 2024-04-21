@@ -1,5 +1,5 @@
 // Define the question
-let question = "Check if a number is a power of 2.";
+ question = "Check if a number is a power of 2.";
 
 // Define the number
 let num = 32;

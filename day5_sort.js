@@ -1,5 +1,5 @@
 // Question
-let question = "Write a function to sort an array of numbers in ascending order.";
+ question = "Write a function to sort an array of numbers in ascending order.";
 
 // Define the function
 function sortArray(arr) {

@@ -1,5 +1,5 @@
 // Define the question
-let question = "Check if a character is uppercase or lowercase.";
+ question = "Check if a character is uppercase or lowercase.";
 
 // Define the character
 let char = 'c';

@@ -1,5 +1,5 @@
 // Define the question
-let question = "Find the sum of digits of a number.";
+ question = "Find the sum of digits of a number.";
 
 // Define the number
 let num = 12345;

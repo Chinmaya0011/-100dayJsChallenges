@@ -1,5 +1,5 @@
 // Question 2
-let question2 = "Write a function to find the longest word in a string.";
+ question2 = "Write a function to find the longest word in a string.";
 
 // Define the function
 let findLong = function(str) {

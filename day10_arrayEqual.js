@@ -16,7 +16,7 @@
 // console.log(findOccurrences(str))
 
 // Define the question
-let question = "Check if two arrays are equal.";
+ question = "Check if two arrays are equal.";
 
 // Define the arrays
 let arr1 = [1, 2, 3];

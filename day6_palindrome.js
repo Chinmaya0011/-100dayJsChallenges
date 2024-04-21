@@ -1,5 +1,5 @@
 // Question
-let question = "Write a function to check if a string is a palindrome.";
+ question = "Write a function to check if a string is a palindrome.";
 
 // Define the function
 function isPalindrome(str) {

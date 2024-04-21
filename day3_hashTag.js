@@ -1,5 +1,5 @@
 // Question 3
-let question = "Write a function to convert a string to a hashtag format.";
+ question = "Write a function to convert a string to a hashtag format.";
 
 // Define the function
 let getHashTag = function(str) {

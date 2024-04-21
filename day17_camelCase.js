@@ -1,5 +1,5 @@
 // Define the question
-let question = "Convert a string to camelCase.";
+ question = "Convert a string to camelCase.";
 
 // Define the string
 let str = 'chinmaya kumar mishra';

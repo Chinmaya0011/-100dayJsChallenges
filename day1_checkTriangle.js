@@ -1,4 +1,4 @@
-let question = "Write a function to check if a triangle is equilateral, isosceles, or scalene.";
+ question = "Write a function to check if a triangle is equilateral, isosceles, or scalene.";
 
 // Define the function
 let checkTriangle = function(a, b, c) {

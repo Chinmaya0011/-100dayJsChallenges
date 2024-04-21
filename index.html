@@ -42,7 +42,8 @@
             <option value="day24_findMode.js">Day 24 - Find the mode of an array <span class="difficulty">Intermediate</span></option>
             <option value="day25_findFact.js">Day 25 - Find factorial <span class="difficulty">Intermediate</span></option>
         </select>
-        
+        <p style="color: wheat; font-size: small; text-align: center;">Note: If the answer does not refresh, please refresh the page.</p>
+
     </div>
     
     
@@ -63,11 +64,8 @@
     </div>
     <script>
         var selectedFileCode; // Variable to store selected file code
-  
- // Function to load and execute selected JavaScript file
-function loadSelectedFile(event) {
-    event.preventDefault(); // Prevent page refresh
-
+ 
+        function loadSelectedFile() {
     var selectElement = document.getElementById("jsFiles");
     var selectedValue = selectElement.value;
     var answerDiv = document.querySelector(".answer");
@@ -82,6 +80,12 @@ function loadSelectedFile(event) {
         outputElement.innerHTML = "";
         document.getElementById("code").innerText = "";
 
+        // Remove previous event listener if exists
+        selectElement.removeEventListener("change", loadSelectedFile);
+
+        // Add new event listener to recall the function when question changes
+        selectElement.addEventListener("change", loadSelectedFile);
+
         // Append script to the body to execute it
         document.body.appendChild(scriptElement);
     } else {
@@ -92,7 +96,6 @@ function loadSelectedFile(event) {
         outputElement.innerHTML = "";
     }
 }
-
 
         // Function to display the code of the selected file
         function showAnswer() {
