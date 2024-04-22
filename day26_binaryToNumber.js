@@ -1,4 +1,4 @@
-let binary=10101010;
+let binary=1010100;
 
 function toNumber(binary){
     let str=binary.toString();
