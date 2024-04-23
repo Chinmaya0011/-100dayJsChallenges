@@ -1,9 +1,26 @@
 *{
-    color: rgba(0, 179, 255, 0.815);
+    color: rgba(41, 205, 71, 0.815);
     font-weight: bold;
     background-color: #000000;
     
 }
+body::after {
+    content: '#100DaysJavascriptChallenges';
+    position: fixed;
+    font-size: 14px; /* Set the font size to 14px */
+    color: rgba(255, 255, 255, 0.1); /* Adjust the color and opacity of the text */
+    pointer-events: none; /* Ensure the text doesn't interfere with mouse events */
+    z-index: 9999; /* Ensure the text appears on top of other elements */
+    width: 100%; /* Set the width of the text */
+    height: 100%; /* Set the height of the text */
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 200px, rgba(255, 255, 255, 0.1) 200px, rgba(255, 255, 255, 0.1) 400px), repeating-linear-gradient(90deg, transparent, transparent 200px, rgba(255, 255, 255, 0.1) 200px, rgba(255, 255, 255, 0.1) 400px); /* Repeat the text every 200px horizontally and vertically */
+    background-size: 200px 200px, 200px 200px; /* Set the size of each repetition */
+    background-attachment: fixed; /* Ensure the background stays fixed while scrolling */
+    background-position: 0 0, 0 0; /* Set the initial background position */
+}
+
+
+  
 .heading {
     text-align: center;
     font-size: 24px;
