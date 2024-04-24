@@ -43,9 +43,9 @@
             <option value="day23_repeatedValueInarray.js">Day 23 - Find repeated values in an array <span class="difficulty">Intermediate</span></option>
             <option value="day24_findMode.js">Day 24 - Find the mode of an array <span class="difficulty">Intermediate</span></option>
             <option value="day25_findFact.js">Day 25 - Find factorial <span class="difficulty">Intermediate</span></option>
-            <option value="day26_fibonacciRecursion.js">Day 26 - Find Fibonacci using recursion<span class="difficulty">Intermediate</span></option>
-            <option value="day27_repeatString.js">Day 27 - Repeat the string<span class="difficulty">Intermediate</span></option>
-            <option value="day28_truncateString.js">Day 28 - Turncate String<span class="difficulty">Intermediate</span></option>
+            <option value="day26_fibonacciRecursion.js">Day 26 - Find Fibonacci using recursion <span class="difficulty">Intermediate</span></option>
+            <option value="day27_repeatString.js">Day 27 - Repeat the string <span class="difficulty">Intermediate</span></option>
+            <option value="day28_truncateString.js">Day 28 - Turncate String <span class="difficulty">Intermediate</span></option>
 
 
         </select>
@@ -69,7 +69,25 @@
    
    
     </div>
-    
+
+    <!--Code Compile-->
+    <div>
+        <h1 style="text-align: center;">Run Your Code Here</h1>
+        <div class="container" id="container">
+            <button onclick="runCode()" class="run-button">Run Code</button>
+            <div class="codecompile">
+                <div class="codeInput">      
+                    <textarea id="codeInput" class="code-input" placeholder="Write your JavaScript code here..."></textarea>
+                </div>
+                <div class="output">
+                    <div class="output-toolbar">
+                        <button onclick="clearOutput()" class="clear-button">Clear Output</button>
+                    </div>
+                    <p id="outputText" class="output-area"></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer Section -->
 <footer>
     <p>100 Day JavaScript Challenge by Thapa Technical</p>
@@ -80,111 +98,8 @@
     </div>
 </footer>
 
-    <script>
-        var selectedFileCode; // Variable to store selected file code
- 
-        function loadSelectedFile() {
-    var selectElement = document.getElementById("jsFiles");
-    var selectedValue = selectElement.value;
-    var answerDiv = document.querySelector(".answer");
-
-    if (selectedValue) {
-        answerDiv.style.display = "block"; // Show the answer section
-        var scriptElement = document.createElement("script");
-        scriptElement.src = selectedValue;
-
-        // Clear previous output and code
-        var outputElement = document.getElementById("output");
-        outputElement.innerHTML = "";
-        document.getElementById("code").innerText = "";
-
-        // Remove previous event listener if exists
-        selectElement.removeEventListener("change", loadSelectedFile);
-
-        // Add new event listener to recall the function when question changes
-        selectElement.addEventListener("change", loadSelectedFile);
-
-        // Append script to the body to execute it
-        document.body.appendChild(scriptElement);
-    } else {
-        // Hide the answer section if no file selected
-        answerDiv.style.display = "none";
-        // Clear output if no file selected
-        var outputElement = document.getElementById("output");
-        outputElement.innerHTML = "";
-    }
-}
-
-        // Function to display the code of the selected file
-        function showAnswer() {
-            var codeElement = document.getElementById("code");
-            codeElement.innerText = selectedFileCode;
-            codeElement.style.display = "block";
-        }
-
-      // Function to copy the code displayed in the pre element
-// Function to copy the code displayed in the pre element
-function copyCode() {
-    var codeElement = document.getElementById("code");
-    var codeText = codeElement.innerText;
-    
-    // Create a textarea element to hold the code text
-    var textarea = document.createElement("textarea");
-    textarea.value = codeText;
-    document.body.appendChild(textarea);
-
-    // Select and copy the code text from the textarea
-    textarea.select();
-    document.execCommand("copy");
-
-    // Remove the textarea from the DOM
-    document.body.removeChild(textarea);
-
-    // Update button text to "Copied" temporarily
-    var copyButton = document.querySelector(".copyButton");
-    copyButton.innerText = "Copied";
-
-    // Restore button text after 2.5 seconds
-    setTimeout(function() {
-        copyButton.innerText = "Copy Code";
-    }, 2500);
-}
-
-// Function to load and execute selected JavaScript file
-function loadSelectedFile() {
-    var selectElement = document.getElementById("jsFiles");
-    var selectedValue = selectElement.value;
-    var answerDiv = document.querySelector(".answer");
-
-    if (selectedValue) {
-        answerDiv.style.display = "block"; // Show the answer section
-        var scriptElement = document.createElement("script");
-        scriptElement.src = selectedValue;
-
-        // Clear previous output and code
-        var outputElement = document.getElementById("output");
-        outputElement.innerHTML = "";
-        document.getElementById("code").innerText = "";
-
-        // Append script to the body to execute it
-        document.body.appendChild(scriptElement);
-    } else {
-        // Hide the answer section if no file selected
-        answerDiv.style.display = "none";
-        // Clear output if no file selected
-        var outputElement = document.getElementById("output");
-        outputElement.innerHTML = "";
-    }
-}
-// Function to display the code of the selected file
-function showAnswer() {
-    var codeElement = document.getElementById("code");
-    var copyButton = document.querySelector(".copyButton"); // Select the Copy Code button
-    codeElement.innerText = selectedFileCode;
-    codeElement.style.display = "block";
-    copyButton.style.display = "block"; // Show the Copy Code button
-}
-
+    <script src="script.js">
+     
     </script>
 
 
