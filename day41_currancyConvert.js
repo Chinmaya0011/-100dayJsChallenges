@@ -21,4 +21,4 @@ convertAmount=amountInUsd*currency[i];
   return convertAmount;
 }
 
-console.log(currencyConvert(100, "euro", "inr")); // Output should be 100 / 82
+console.log(currencyConvert(1, "euro", "inr")); // Output should be 100 / 82
