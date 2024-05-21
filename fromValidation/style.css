@@ -1,0 +1,26 @@
+.form{
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px salmon;
+}
+#name,#mobile,#email{
+    height: 30px;
+}
+#adress{
+    height: 50px;
+}
+button{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: blue;
+}
