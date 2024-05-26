@@ -11,3 +11,9 @@ for(let j=0;j<words1.length;j++){
 return result.join(" ");
 }
   console.log(order("is2 Thi1s T4est 3a"))
+function stringToArray(string){
+ 
+        // code code code
+    
+    }
+    console.log(stringToArray("Robin Singh"))
