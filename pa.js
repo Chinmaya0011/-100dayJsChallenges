@@ -224,12 +224,124 @@
 // console.log(typeof a)
 // console.log(false-true)
 // console.log("chinu"/2)
-console.log("5"===5);
-console.log("20"+10+10)
+// console.log("5"===5);
+// console.log("20"+10+10)
 
 
+// let age=17;
 
+// switch(true){
+//     case (age<18):
+//         console.log("drive cycle");
+//         break;
+//         case (age>=18):
+//             console.log("yo drive bike")
+//         break;
+//         default:
+//             console.log("enter a number")
 
+// }
 
+//while loop;
 
+// let i=0;
 
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
+// let i=1;
+// do{
+//     console.log(i);
+//     i++;
+// }
+// while(i<=10)
+    // for(let i=0;i<5;i++){
+    //     let pattern="*"
+    //  for(j=1;j<=i;j++){
+    //   pattern=pattern+" "+"*"
+    //  }
+    //    console.log(pattern)
+    // }
+
+//     for(let i=1;i<=5;i++){
+//         let pattern="";
+//         for(let j=1;j<=i;j++){
+// pattern+=" "+"*";
+//         }
+//         console.log(pattern)
+//     }
+// let star=5;
+// for(let i=1;i<=star;i++){
+// let space="";
+// for(let j=1;j<=(star-i);j++){
+//     space+=" "
+// }
+// let str=""
+// for(let k=1;k<=i;k++){
+// str+="*"
+// }
+// console.log(space+str)
+// }
+
+// for(let i=1;i<=5;i++){
+//     let space="";
+
+//     for(let j=1;j<=(5-i);j++){
+//         space+=" ";
+      
+//     }
+//     let star="";
+//     for(let k=1;k<=i;k++){
+//         star+="*"
+//     }
+
+//     for(let l=2;l<=i;l++){
+//        star+="*"
+//     }
+//     console.log(space+star)
+// }
+// let count=1
+// for(let i=1;i<=4;i++){
+//     let num=''
+//     for(let j=1;j<=i;j++){
+//      num+=count;
+//    count++
+//     }
+//     console.log(num)
+      
+// }
+// let count = 1;
+// for (let i = 1; i <= 4; i++) {
+//     let num = Array.from({ length: i }, () => count++).reduce((acc, curr) => acc + curr, '');
+//     console.log(num);
+// }
+
+// let chinu="chinmayakumarmishra"
+// for(let item of chinu){
+//     console.log(item)
+// }
+// let number=[1,2,4,5,6];
+// number.forEach(number=>{
+//     console.log(number*2)
+// })
+// number.map(number=>{
+//     console.log(number+1)
+// })
+// let a=[1,2,3,4,5];
+// let arr=a.map(element=>element*5);
+// let arr2=arr.findIndex(element=> element>=10);
+// console.log(arr2)
+
+let str="chinmaya kumar mishra";
+function capital(str){
+    let str1=str.split(" ");
+    let result=" "
+for(let i=0;i<str1.length;i++){
+   let word=str1[i];
+  let lower =word.substring(0,1).toUpperCase()+word.substring(1,str1[i].length);
+ result+=lower+" "
+}
+return result;
+}
+console.log(capital(str))
