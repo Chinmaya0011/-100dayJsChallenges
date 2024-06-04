@@ -333,15 +333,22 @@
 // let arr2=arr.findIndex(element=> element>=10);
 // console.log(arr2)
 
-let str="chinmaya kumar mishra";
-function capital(str){
-    let str1=str.split(" ");
-    let result=" "
-for(let i=0;i<str1.length;i++){
-   let word=str1[i];
-  let lower =word.substring(0,1).toUpperCase()+word.substring(1,str1[i].length);
- result+=lower+" "
-}
-return result;
-}
-console.log(capital(str))
+// let str="chinmaya kumar mishra";
+// function capital(str){
+//     let str1=str.split(" ");
+//     let result=" "
+// for(let i=0;i<str1.length;i++){
+//    let word=str1[i];
+//   let lower =word.substring(0,1).toUpperCase()+word.substring(1,str1[i].length);
+//  result+=lower+" "
+// }
+// return result;
+// }
+// console.log(capital(str))
+let str='kumar chinmaya kumar mishra kumar';
+// let result=str.match(/kumar/g);
+// console.log(result.length)
+// let result1=str.slice(8,11);
+// console.log(result1)
+let result=str.at(-4);
+console.log(result)
