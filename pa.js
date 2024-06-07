@@ -345,10 +345,23 @@
 // return result;
 // }
 // console.log(capital(str))
-let str='kumar chinmaya kumar mishra kumar';
 // let result=str.match(/kumar/g);
 // console.log(result.length)
 // let result1=str.slice(8,11);
 // console.log(result1)
-let result=str.at(-4);
+// let result=str.at(-4);
+// console.log(result)
+
+let str="chinmaya kumar mishra";
+// console.log(str.slice(1))
+// console.log(str.charAt(0))
+function camelCase(str){
+let str1=str.split(" ")
+let result=""
+for(let i=0;i<str1.length;i++){
+let word=str1[i];
+result+=word.at(0).toUpperCase()+word.slice(1)+" ";
+}
 console.log(result)
+}
+camelCase(str)
