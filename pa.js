@@ -355,13 +355,21 @@
 let str="chinmaya kumar mishra";
 // console.log(str.slice(1))
 // console.log(str.charAt(0))
-function camelCase(str){
-let str1=str.split(" ")
-let result=""
-for(let i=0;i<str1.length;i++){
-let word=str1[i];
-result+=word.at(0).toUpperCase()+word.slice(1)+" ";
-}
-console.log(result)
-}
-camelCase(str)
+// function camelCase(str){
+// let str1=str.split(" ")
+// let result=""
+// for(let i=0;i<str1.length;i++){
+// let word=str1[i];
+// result+=word.at(0).toUpperCase()+word.slice(1)+" ";
+// }
+// console.log(result)
+// }
+// camelCase(str)
+
+// for(let char=97;char<=122;char++){
+//     console.log(String.fromCharCode(char))
+// }
+
+
+let num=parseInt((Math.random()*100).toFixed());
+console.log(typeof num)
