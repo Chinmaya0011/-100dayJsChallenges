@@ -318,7 +318,7 @@
 // }
 
 // let chinu="chinmayakumarmishra"
-// for(let item of chinu){
+// for(let id of chinu){
 //     console.log(item)
 // }
 // let number=[1,2,4,5,6];
