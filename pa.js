@@ -352,7 +352,7 @@
 // let result=str.at(-4);
 // console.log(result)
 
-let str="chinmaya kumar mishra";
+// let str="chinmaya kumar mishra";
 // console.log(str.slice(1))
 // console.log(str.charAt(0))
 // function camelCase(str){
@@ -370,6 +370,33 @@ let str="chinmaya kumar mishra";
 //     console.log(String.fromCharCode(char))
 // }
 
+// // 
+// let num=parseInt((Math.random()*100).toFixed());
+// console.log(typeof num)
+// // console.log(4+"4")
+// function longestConsecutive(nums) {
+//     if (nums.length === 0) return 0;
 
-let num=parseInt((Math.random()*100).toFixed());
-console.log(typeof num)
+//     const numSet = new Set(nums);
+//     let maxLength = 0;
+
+//     for (let num of numSet) {
+//         if (!numSet.has(num - 1)) {
+//             let currentNum = num;
+//             let currentLength = 1;
+
+//             while (numSet.has(currentNum + 1)) {
+//                 currentNum += 1;
+//                 currentLength += 1;
+//             }
+
+//             maxLength = Math.max(maxLength, currentLength);
+//         }
+//     }
+
+//     return maxLength;
+// }
+
+// // Example test case
+// const nums = [100, 4, 200, 1, 3, 2];
+// console.log(longestConsecutive(nums)); // Output should be 4
