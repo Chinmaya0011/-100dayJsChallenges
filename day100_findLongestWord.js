@@ -9,4 +9,4 @@ for(let i=0;i<str1.length;i++){
 }
 return long;
     }
-    console.log(findLongestWord("cnn k kk hi n kufg xdf maiii mishrn vc cxpiia"))
+    console.log(findLongestWord("The quick brown fox jumps over the lazy dog"))
